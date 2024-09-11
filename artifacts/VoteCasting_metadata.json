@@ -1,0 +1,245 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "voterAddress",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					}
+				],
+				"name": "voteCast",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "candidates",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "candidateName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "candidateVotes",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isValue",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_candidateID",
+						"type": "uint256"
+					}
+				],
+				"name": "cast",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "closeVoting",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "elapsedMinutes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getTotalCandidates",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_candidateID",
+						"type": "uint256"
+					}
+				],
+				"name": "getVoteCount",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "candidateName",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "candidateVotes",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "isValue",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct VotingApp.Candidate",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_candidateID",
+						"type": "uint256"
+					}
+				],
+				"name": "getVoteCounts",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "hasVoted",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_candidateID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_candidateName",
+						"type": "string"
+					}
+				],
+				"name": "registerCandidate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "startTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/VotingApp/VotingApp.sol": "VoteCasting"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/VotingApp/VotingApp.sol": {
+			"keccak256": "0x94927a740f302288e903b8ee212a6497529e61840e3fa3478c26d32515a1b219",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://ba3ed7aac4034a1fa72b4768b8fce29e1a73b18977bc1e07fd86228cf4b9882b",
+				"dweb:/ipfs/QmPySygsQmsUTfw6sZhBCW3KbeVPiLrHqjaCi4FJAge1Rj"
+			]
+		}
+	},
+	"version": 1
+}
